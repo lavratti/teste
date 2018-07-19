@@ -15,14 +15,6 @@ labelCountV = countEachLabel(imdsV)
 imdsTrain = imdsT
 imdsValidation = imdsV
 
-
-% digitDatasetPath = fullfile(matlabroot,'toolbox','nnet','nndemos', ...
-%     'nndatasets','DigitDataset');
-% imds = imageDatastore(digitDatasetPath, ...
-%     'IncludeSubfolders',true,'LabelSource','foldernames');
-% numTrainFiles = 750;
-% [imdsTrain,imdsValidation] = splitEachLabel(imds,numTrainFiles,'randomize');
-
 % modifica a passada dos filtro da camadas conv.
 for fS = 1:5
     % modifica o tamanho dos filtros das camadas conv.
